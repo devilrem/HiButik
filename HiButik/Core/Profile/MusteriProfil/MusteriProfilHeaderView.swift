@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct MusteriProfilHeaderView: View {
+    let musteri: Musteri
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text(musteri.isim)
+                .fontWeight(.bold)
+ 
+            Text(musteri.email)
+        }
+        .frame(maxWidth: .infinity)
     }
 }
 
 #Preview {
-    MusteriProfilHeaderView()
+    MusteriProfilHeaderView(musteri: MockData.musteri[0])
 }

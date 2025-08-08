@@ -10,13 +10,6 @@ import SwiftUI
 
 struct MainTabView: View {
     var body: some View {
-            HStack {
-                Image("logo1")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 150, height: 40) // Set your desired logo size
-                    .clipped()
-            }
         
         TabView {
             CardStackView()
@@ -28,7 +21,7 @@ struct MainTabView: View {
             Text("Favorites")
                 .tabItem { Image(systemName: "heart")}
                 .tag(2)
-            Text("Profile")
+            MusteriProfilView(musteri: MockData.musteri[0])
                 .tabItem { Image(systemName: "person")}
                 .tag(3)
         }

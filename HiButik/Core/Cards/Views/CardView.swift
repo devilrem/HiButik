@@ -12,7 +12,7 @@ struct CardView: View {
     @State private var xOffset: CGFloat = 0
     @State private var degrees: Double = 0
     @State private var currentImageIndex = 0
-    
+    @State private var showProfileModal = false
 
     
     let model: CardModel
@@ -28,10 +28,12 @@ struct CardView: View {
                 CardImageIndicatorView(currentImageIndex: currentImageIndex, imageCount: imageCount)
                 SwipeActionIndicatorView(xOffset: $xOffset)
             }
-
-            UserInfoView(urun: urun) //resmin içindeki yazıları gösterir
- 
+            
+            UserInfoView(showProfileModal: $showProfileModal, urun: urun) //resmin içindeki yazıları gösterir
         }
+        .fullScreenCover(isPresented: $showProfileModal) {
+            UrunIcerikView(urun: urun)
+                }
         .onReceive(viewModel.$buttonSwipeAction, perform: {action in
             onReceiveSwipeAction(action)
         })

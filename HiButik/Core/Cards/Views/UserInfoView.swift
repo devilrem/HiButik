@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct UserInfoView: View {
+    @Binding var showProfileModal: Bool
     let urun: Urun
     
     var body: some View {
@@ -18,6 +19,13 @@ struct UserInfoView: View {
                     .font(.headline)
                     .fontWeight(.heavy)
                 Spacer()
+                Button{
+                    showProfileModal.toggle()
+                } label: {
+                    Image(systemName: "arrow.up.circle")
+                        .fontWeight(.bold)
+                        .imageScale(.large)
+                }
             }
 
             // Alt satır: Marka (sol alt), Fiyat (sağ alt)
@@ -37,5 +45,5 @@ struct UserInfoView: View {
 }
 
 #Preview {
-    UserInfoView(urun: MockData.urun[1])
+    UserInfoView(showProfileModal: .constant(false), urun: MockData.urun[1])
 }

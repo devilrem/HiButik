@@ -8,11 +8,32 @@
 import SwiftUI
 
 struct MusteriProfilView: View {
+    let musteri: Musteri
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            List{
+                //header
+                Section("Hesap Bilgileri") {
+                    MusteriProfilHeaderView(musteri: musteri)//burada bir yanlışlık olabilir
+                }
+                        //account info
+                Section("Yardım") {
+                    Text("Kullanıcı Sözleşmesi")
+                    Text("SSS")
+                }
+                
+                //çıkış
+                Section() {
+                    Button("Çıkış Yap") {
+                        print("Çıkış yapıldı")
+                    }
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    MusteriProfilView()
+    MusteriProfilView(musteri: MockData.musteri[1])
 }

@@ -14,29 +14,47 @@ struct MockData {
             isim: "kırmızı elbise",
             marka: "zara",
             fiyat: 1000,
-            profileImageURLs: ["e11", "e12", "e13"]
+            profileImageURLs: ["e11", "e12", "e13"],
+            website: "zara.com"
         ),
         .init(
             id: NSUUID().uuidString,
             isim: "gri elbise",
             marka: "zara",
             fiyat: 1600,
-            profileImageURLs: ["e21", "e22", "e23"]
+            profileImageURLs: ["e21", "e22", "e23"],
+            website: "zara.com"
         ),
         .init(
             id: NSUUID().uuidString,
             isim: "kahve elbise",
             marka: "zara",
             fiyat: 990,
-            profileImageURLs: ["e31", "e32", "e33","e34","e35"]
+            profileImageURLs: ["e31", "e32", "e33","e34","e35"],
+            website: "zara.com"
         ),
         .init(
             id: NSUUID().uuidString,
             isim: "beyaz elbise",
             marka: "zara",
             fiyat: 2400,
-            profileImageURLs: ["e41", "e42", "e43","e44"]
+            profileImageURLs: ["e41", "e42", "e43","e44"],
+            website: "zara.com"
         )
     ]
-
+    
+    
+    
+    static let musteri: [Musteri] = [
+        .init(
+            id: NSUUID().uuidString,
+            isim: "DtTT",
+            email: "dttt@gmail.com"
+        ),
+        .init(
+            id: NSUUID().uuidString,
+            isim: "RRyy",
+            email: "rryy@gmail.com"
+        )
+    ]
 }

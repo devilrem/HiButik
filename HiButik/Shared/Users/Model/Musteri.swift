@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct Musteri: Identifiable, Hashable {
+    let id: String
+    let isim: String
+    let email: String
+    //var fiyat: Int
+    //var profileImageURL: String
+    //let website: String
+}

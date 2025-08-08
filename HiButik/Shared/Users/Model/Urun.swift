@@ -13,4 +13,5 @@ struct Urun: Identifiable, Hashable {
     let marka: String
     var fiyat: Int
     var profileImageURLs: [String]
+    let website: String
 }
