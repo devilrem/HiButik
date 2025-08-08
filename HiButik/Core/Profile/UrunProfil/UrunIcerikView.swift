@@ -5,53 +5,54 @@ struct UrunIcerikView: View {
     let urun: Urun
 
     var body: some View {
-        
-        //yazıları yazar
-        VStack {
+        VStack(spacing: 8) {
+            // Üst satır: isim ortada, kapatma butonu sağda
             HStack {
-                
+                Spacer()
+
                 Text(urun.isim.uppercased())
                     .font(.headline)
                     .fontWeight(.semibold)
-                
-                //sayfa kapama duğmesi
+                    .offset(x: 20) // Sağa kaydırma miktarı (deneme ile ayarla)
+
+                Spacer()
+
                 Button {
                     dismiss()
                 } label: {
-                    Image(systemName: "arrow.down.circle.fill")
-                        .imageScale(.large)
+                    Image(systemName: "multiply.circle")
                         .fontWeight(.bold)
+                        .imageScale(.large)
                         .foregroundColor(.red)
+                        .padding(.trailing)
                 }
-
             }
 
-            // Alt satır: Marka (sol alt), Fiyat (sağ alt)
-            HStack {
+            // Alt satır: marka ve fiyat ortada yan yana
+            HStack(spacing: 4) {
+                Spacer()
                 Text(urun.marka.uppercased())
-               // Spacer()
                 Text("| \(urun.fiyat) TL")
+                Spacer()
             }
-        }
-    
-    //resimleri sıralar
-        ScrollView {
-            VStack(spacing: 16) {
-                ForEach(urun.profileImageURLs, id: \.self) { imageName in
-                    Image(imageName)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .cornerRadius(8)
-                        .shadow(radius: 4)
-                        .padding(.horizontal)
+
+            // Resimler
+            ScrollView {
+                VStack(spacing: 16) {
+                    ForEach(urun.profileImageURLs, id: \.self) { imageName in
+                        Image(imageName)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .cornerRadius(8)
+                            .shadow(radius: 4)
+                            .padding(.horizontal)
+                    }
                 }
+                .padding(.vertical)
             }
-            .padding(.vertical)
         }
     }
 }
-
-
 
 #Preview {
     UrunIcerikView(urun: MockData.urun[1])

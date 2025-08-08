@@ -22,7 +22,7 @@ struct UserInfoView: View {
                 Button{
                     showProfileModal.toggle()
                 } label: {
-                    Image(systemName: "arrow.up.circle")
+                    Image(systemName: "info.circle")
                         .fontWeight(.bold)
                         .imageScale(.large)
                 }
