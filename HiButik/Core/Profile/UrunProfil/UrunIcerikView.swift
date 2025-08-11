@@ -2,6 +2,7 @@ import SwiftUI
 
 struct UrunIcerikView: View {
     @Environment(\.dismiss) var dismiss
+    @Environment(\.openURL) var openURL
     let urun: Urun
 
     var body: some View {
@@ -50,8 +51,42 @@ struct UrunIcerikView: View {
                 }
                 .padding(.vertical)
             }
+
+
+            // Floating bottom-center button mağaza linki (transparent background, red text)
+            HStack {
+                Spacer()
+                Button {
+                    if let url = normalizedURL(from: urun.website) {
+                        openURL(url)
+                    }
+                } label: {
+                    HStack(spacing: 8) {
+                        Text("Mağazayı Ziyaret Et")
+                            .fontWeight(.semibold)
+                            .foregroundColor(.red)     // sadece yazı kırmızı
+                    }
+               }
+                .buttonStyle(.plain)                // varsayılan buton stili efektlerini kapatır
+                Spacer()
+            }
+            .padding(.bottom, 20)
         }
     }
+
+
+            
+        
+    
+}
+
+/// http/https yoksa https ekleyip geçerli URL döndürür
+private func normalizedURL(from raw: String) -> URL? {
+    var s = raw.trimmingCharacters(in: .whitespacesAndNewlines)
+    if !s.lowercased().hasPrefix("http://") && !s.lowercased().hasPrefix("https://") {
+        s = "https://" + s
+    }
+    return URL(string: s)
 }
 
 #Preview {
