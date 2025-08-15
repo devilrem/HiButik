@@ -68,7 +68,7 @@ private extension CardView {
     func swipeRight() {
         withAnimation{
             xOffset = 500
-            degrees = 12
+            //degrees = 12
         } completion: {
             viewModel.removeCard(model)
         }
@@ -77,7 +77,7 @@ private extension CardView {
     func swipeLeft() {
         withAnimation{
             xOffset = -500
-            degrees = -12
+            //degrees = -12
         } completion: {
             viewModel.removeCard(model)
         }
@@ -101,7 +101,7 @@ private extension CardView {
 private extension CardView {
     func onDragChanged(_ value: _ChangedGesture<DragGesture>.Value){
         xOffset = value.translation.width //fotoyu saga sola iter
-        degrees = Double(value.translation.width / 25) //fotonun açısını değiştirir
+        //degrees = Double(value.translation.width / 25) //fotonun açısını değiştirir
     }
     func onDragEnded(_ value: _ChangedGesture<DragGesture>.Value) {
         let width = value.translation.width

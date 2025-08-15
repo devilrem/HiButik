@@ -11,9 +11,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4525F9772E33CD6700064658 /* HiButik */ = {
+		4525F9772E33CD6700064658 /* HeyButik */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HiButik;
+			path = HeyButik;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		4525F96C2E33CD6700064658 = {
 			isa = PBXGroup;
 			children = (
-				4525F9772E33CD6700064658 /* HiButik */,
+				4525F9772E33CD6700064658 /* HeyButik */,
 				4525F9762E33CD6700064658 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				4525F9772E33CD6700064658 /* HiButik */,
+				4525F9772E33CD6700064658 /* HeyButik */,
 			);
 			name = HeyButik;
 			packageProductDependencies = (
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4525F9702E33CD6700064658 /* Build configuration list for PBXProject "HiButik" */;
+			buildConfigurationList = 4525F9702E33CD6700064658 /* Build configuration list for PBXProject "HeyButik" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -303,7 +303,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4525F9702E33CD6700064658 /* Build configuration list for PBXProject "HiButik" */ = {
+		4525F9702E33CD6700064658 /* Build configuration list for PBXProject "HeyButik" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4525F97E2E33CD6A00064658 /* Debug */,
