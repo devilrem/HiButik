@@ -49,12 +49,16 @@ struct MockData {
         .init(
             id: NSUUID().uuidString,
             isim: "DtTT",
-            email: "dttt@gmail.com"
+            email: "dttt@gmail.com",
+            liked: [],
+            disliked: []
         ),
         .init(
             id: NSUUID().uuidString,
             isim: "RRyy",
-            email: "rryy@gmail.com"
+            email: "rryy@gmail.com",
+            liked: [],
+            disliked: []
         )
     ]
 }

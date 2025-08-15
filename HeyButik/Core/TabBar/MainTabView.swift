@@ -15,8 +15,7 @@ struct MainTabView: View {
             CardStackView()
                 .tabItem { Image(systemName: "person.2.square.stack")}
                 .tag(0)
-            Text("Search")
-                .tabItem { Image(systemName: "magnifyingglass")}
+            SimpleSearchView(allProducts: MockData.urun)                .tabItem { Image(systemName: "magnifyingglass")}
                 .tag(1)
             Text("Favorites")
                 .tabItem { Image(systemName: "heart")}

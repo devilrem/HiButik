@@ -14,4 +14,10 @@ struct Musteri: Identifiable, Hashable {
     //var fiyat: Int
     //var profileImageURL: String
     //let website: String
+    
+    /// Müşterinin beğendiği ürünlerin ID listesi
+    var liked: [String]
+    
+    /// Müşterinin beğenmediği ürünlerin ID listesi
+    var disliked: [String]
 }

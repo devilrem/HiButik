@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		4525F9752E33CD6700064658 /* HiButik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiButik.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4525F9752E33CD6700064658 /* HeyButik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeyButik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,7 +40,7 @@
 		4525F9762E33CD6700064658 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4525F9752E33CD6700064658 /* HiButik.app */,
+				4525F9752E33CD6700064658 /* HeyButik.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4525F9742E33CD6700064658 /* HiButik */ = {
+		4525F9742E33CD6700064658 /* HeyButik */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4525F9802E33CD6A00064658 /* Build configuration list for PBXNativeTarget "HiButik" */;
+			buildConfigurationList = 4525F9802E33CD6A00064658 /* Build configuration list for PBXNativeTarget "HeyButik" */;
 			buildPhases = (
 				4525F9712E33CD6700064658 /* Sources */,
 				4525F9722E33CD6700064658 /* Frameworks */,
@@ -63,11 +63,11 @@
 			fileSystemSynchronizedGroups = (
 				4525F9772E33CD6700064658 /* HiButik */,
 			);
-			name = HiButik;
+			name = HeyButik;
 			packageProductDependencies = (
 			);
 			productName = HiButik;
-			productReference = 4525F9752E33CD6700064658 /* HiButik.app */;
+			productReference = 4525F9752E33CD6700064658 /* HeyButik.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4525F9742E33CD6700064658 /* HiButik */,
+				4525F9742E33CD6700064658 /* HeyButik */,
 			);
 		};
 /* End PBXProject section */
@@ -251,6 +251,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8PF4W492G5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -278,6 +279,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8PF4W492G5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -310,7 +312,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4525F9802E33CD6A00064658 /* Build configuration list for PBXNativeTarget "HiButik" */ = {
+		4525F9802E33CD6A00064658 /* Build configuration list for PBXNativeTarget "HeyButik" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4525F9812E33CD6A00064658 /* Debug */,
